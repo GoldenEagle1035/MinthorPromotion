@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Home = () => {
+const About = () => {
 
     const dispatch = useDispatch();
 
@@ -14,42 +14,9 @@ const Home = () => {
     }, [])
 
     return (
-        <div id="home" className="w-full h-auto flex flex-col gap-[30px] lg:gap-[60px] pb-[200px] lg:pb-[100px] bg-black items-center">
-            <div id="welcome" className="w-full h-[100vh] relative flex flex-row justify-center">
-                <img src="images/slide222.gif" alt="" className="absolute top-0 left-0 w-full h-full" />
-                <img src="images/ssy8.png" alt="" className="absolute bottom-0 left-0 w-full h-2/3 md:h-3/4 lg:h-full" />
-
-                <div className="w-5/6 h-full pt-[50px] flex flex-row z-0">
-                    <div className="w-2/3 lg:w-1/3 flex flex-col">
-                        <div className="w-full h-1/3 lg:h-1/2 flex justify-center items-center">
-                            <img src="images/rotate-10s.png" alt="" className="w-full h-full object-contain" />
-                        </div>
-                        <div className="w-full h-2/3 lg:h-1/2 flex flex-col gap-[20px] justify-center">
-                            <div className="text-[20px] lg:text-[40px] font-bold text-white">Blok-O-Poly Best Virtual 3D Land Selling Platform</div>
-                            <div className="text-[10px] lg:text-[20px] text-white">Let's implement creative and award winning projects together in the world of Metaverse and NFT.</div>
-                            <div className="flex">
-                                <button className="text-[10px] lg:text-[20px] font-bold text-white px-[15px] lg:px-[25px] py-[10px] lg:py-[20px] rounded-md bg-gradient-to-r from-[#d02ef0] from-0% to-[#09cfff] to-100% hover:bg-gradient-to-l shadow-xl">Buy Land Virtual Immediately →</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-2/3"></div>
-                </div>
-            </div>
-            <div id="tokenomics" className="w-5/6 flex flex-row">
-                <div className="w-1/3 flex flex-row justify-center items-center">
-                    <img src="images/about-meta-11.gif" alt="" className="w-2/3 object-contain" />
-                </div>
-                <div className="w-2/3 flex flex-col gap-[20px]">
-                    <div className="text-[20px] lg:text-[30px] font-bold text-white">Brilliant Tokenomics</div>
-                    <div className="text-[10px] lg:text-[15px] text-white">Expanation ...</div>
-                    <div className="text-[10px] lg:text-[15px] text-white">Expanation ...</div>
-                    <div className="text-[10px] lg:text-[15px] text-white">Expanation ...</div>
-                    <div className="text-[10px] lg:text-[15px] text-white">Expanation ...</div>
-
-                    <div className="flex">
-                        <button className="text-[10px] lg:text-[20px] font-bold text-white px-[15px] lg:px-[25px] py-[10px] lg:py-[20px] rounded-md bg-gradient-to-r from-[#d02ef0] from-0% to-[#09cfff] to-100% hover:bg-gradient-to-l shadow-xl">Get Details →</button>
-                    </div>
-                </div>
+        <div id="about" className="w-full h-auto flex flex-col gap-[30px] lg:gap-[60px] pb-[200px] lg:pb-[100px] bg-black items-center">
+            <div className="relative w-5/6 flex flex-col pt-[100px] lg:pt-[150px] pb-[10px] lg:pb-[50px]">
+                <div className="text-[40px] font-bold text-white text-center">Products</div>
             </div>
             <div id="terrain" className="w-5/6 flex flex-row">
                 <div className="w-2/3 flex flex-col gap-[20px]">
@@ -305,4 +272,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default About;
